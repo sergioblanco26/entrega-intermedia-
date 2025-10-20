@@ -20,11 +20,13 @@ Guardar una variable en css
 }
 
 
+
 * {
     font-family: var(--ff-primary);
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+   
 }
 
 
@@ -35,10 +37,9 @@ Cuanto es el fontsize del html por defecto? 16px
 */
  
 
-EM es una unidad de medida de tamaño relativa al font-size del padre mas cercano
-
  .padre{
     font-size: 40px;
+
 }
 
 .padre .titulo{
@@ -67,6 +68,163 @@ html{
 li {
     list-style-type: none;
 }
+
+
+.header_principal{
+background-color: var(--primary--100);
+    
+}
+
+
+body {
+    margin: 0;
+    font-family: 'DM Sans', sans-serif;
+    background-color: #673de6; /* violeta Hostinger */
+    color: white;
+}
+
+/* Estructura principal */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4rem 8%;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+/* Columna de texto */
+.hero-content {
+    max-width: 45%;
+}
+
+.hero-content h1 {
+    font-size: 60px;
+    line-height: 1.1;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    color: #e0dff9;
+    margin-bottom: 2rem;
+}
+
+.cta-btn {
+    background-color: white;
+    color: black;
+    font-weight: 600;
+    padding: 1rem 2.5rem;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+
+}
+
+.cta-btn:hover {
+    background-color: #ddd;
+}
+
+/* Imagen principal y tarjetas */
+.hero-image {
+    position: relative;
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-img {
+    width: 100%;
+    border-radius: 20px;
+    z-index: 2;
+}
+
+/* Tarjetas */
+.card {
+    position: absolute;
+    background: white;
+    color: #6d45e0;
+    border-radius: 15px;
+    padding: 1rem 1.5rem;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    font-weight: 600;
+}
+
+/* Diferentes posiciones */
+.card-top {
+    top: 0;
+    right: 5%;
+    transform: translateY(-50%);
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
+
+.card-middle {
+    bottom: 15%;
+    left: 10%;
+    background: linear-gradient(180deg, #f3f1ff 0%, #ffffff 100%);
+    font-size: 2rem;
+    font-weight: 700;
+    text-transform: lowercase;
+    line-height: 1;
+}
+
+.card-bottom {
+    bottom: -5%;
+    left: 0;
+    background: white;
+    color: black;
+    font-size: 0.9rem;
+}
+
+
+
+/* Responsive */
+@media (max-width: 900px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-content {
+        max-width: 90%;
+    }
+
+    .hero-image {
+        width: 90%;
+        margin-top: 3rem;
+    }
+
+    .hero-content h1 {
+        font-size: 3rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*----------------------------------*/
+
+
 
 
 .title {
@@ -128,17 +286,20 @@ CLASES UTILITARIAS
 
 .section-content {
     width: 1800px;
-    padding: 0 80px;
+    padding: 0 280px;
     display: flex;
+
     flex-direction: column;
     align-items: center;
     gap: 50px;
 }
 
 .mails-section__articles-container {
+    background-color: #f2f3f6; 
     display: flex;
     flex-direction: row;
     gap: 20px;
+    
 }
 
 .feature-article {
@@ -158,6 +319,7 @@ CLASES UTILITARIAS
     flex-direction: column;
     align-items: start;
     gap: 20px
+
 }
 
 
@@ -166,6 +328,7 @@ CLASES UTILITARIAS
     display: flex;
     flex-direction: row;
     align-items: end;
+    
 }
 
 .feature-article__image img {
@@ -177,6 +340,9 @@ CLASES UTILITARIAS
     flex-direction: column;
     gap: 16px;
     align-items: center;
+    background-color: var(--neutral-100);
+
+    
 }
 
 .feature-list {
@@ -246,14 +412,17 @@ header .btn-menu{
 
     .subtitle {
         font-size: 36px;
+        color: var(--neutral-100)
     }
 
     .section-content {
         padding: 0 40px;
+        background-color: #f0f1f5;
     }
 
     .mails-section__articles-container {
         flex-direction: column;
+      
     }
 
 
@@ -290,6 +459,7 @@ header .btn-menu{
 
     .section-content {
         padding: 0 16px;
+        background-color: #f0f1f5;
     }
 
     .search-bar{
@@ -509,7 +679,7 @@ Si el ancho de mi pagina es menor a 700px entonces ejecutare este codigo de css
 
 @media screen and (max-width: 350px) {
     .caja{
-        background-color: black;
+       /* background-color: black;*/
     }
 } 
 
@@ -523,6 +693,7 @@ Si el ancho de mi pagina es menor a 700px entonces ejecutare este codigo de css
 .footer__container {
   max-width: 900px;
   margin: 0 auto;
+  background-color: var(--neutral-100);
 }
 
 .footer__logo img {
