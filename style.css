@@ -1,9 +1,6 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;600;700&display=swap");
 
-/* =======================================================
-   VARIABLES GLOBALES
-   ======================================================= */
 :root {
     --ff-primary: "DM Sans", sans-serif;
     --neutral-0: #ffffff;
@@ -13,9 +10,6 @@
     --primary-500: #673de5;
 }
 
-/* =======================================================
-   RESET Y CONFIGURACIÓN BASE
-   ======================================================= */
 * {
     margin: 0;
     padding: 0;
@@ -33,9 +27,6 @@ body {
     color: var(--neutral-600);
 }
 
-/* =======================================================
-   HEADER
-   ======================================================= */
 header {
     display: flex;
     justify-content: space-between;
@@ -68,9 +59,6 @@ header .btn-menu {
     font-size: 24px;
 }
 
-/* =======================================================
-   HERO SECTION
-   ======================================================= */
 .hero {
     display: flex;
     justify-content: space-between;
@@ -79,7 +67,7 @@ header .btn-menu {
     min-height: 90vh;
     background-color: #673de6;
     color: #fff;
-    flex-wrap: wrap; /* 🚫 evita que se desborde */
+    flex-wrap: wrap; /* evita que se desborde */
 }
 
 .hero-content {
@@ -157,9 +145,6 @@ header .btn-menu {
     text-transform: lowercase;
 }
 
-/* =======================================================
-   MAILS SECTION
-   ======================================================= */
 .mails-section {
     background-color: var(--neutral-100);
     padding: 100px 5%;
@@ -196,7 +181,7 @@ header .btn-menu {
 
 .mails-section__articles-container {
     display: flex;
-    flex-wrap: wrap; /* ✅ evita desborde */
+    flex-wrap: wrap; /*  evita desborde */
     gap: 24px;
     width: 100%;
 }
@@ -239,9 +224,7 @@ header .btn-menu {
     display: block;
 }
 
-/* =======================================================
-   MIGRACIÓN DE SITIOS
-   ======================================================= */
+
 .migracion__section {
     max-width: 1200px;
     margin: 0 auto;
